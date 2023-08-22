@@ -2,25 +2,29 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11591967&assignment_repo_type=AssignmentRepo)
 # Título do Projeto
 
-`CURSO: Sistemas de Informação`
+`CURSO: Sistemas de Informação e Analise de Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto "BancaComics" é um site interativo que oferece aos fãs da Marvel uma experiência única e envolvente para explorar o vasto universo dos quadrinhos, filmes e peronagens da Marvel. Através da integração com a API da Marvel, os usuários têm a oportunidade de se registrar, acessar informações detalhadas sobre HQs, filmes, personagens e autores, além de poderem favoritar e comentar sobre suas series preferidas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Marcos Vinicius Gomes Santana
+* Andoni Rodriguez Alves
+* Guilherme Augusto dos Santos
+* Rodrigo Sergio Alves da Silva
+* Estavão Antunes Lessa Sousa Oliveira
+* Pedro Cesar de Barros
+* Marçal Augusto de Morais
 
 ## Orientador
 
-* Nome completo do professor 1
+* fábio Leandro Rodrigues Cordeiro
+* Franciele Parreiras
+* Shirley Luana Ramos de Assis
 
 # Planejamento
 
