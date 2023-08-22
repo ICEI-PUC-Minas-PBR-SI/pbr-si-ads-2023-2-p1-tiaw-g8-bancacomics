@@ -22,7 +22,7 @@ O projeto "BancaComics" é um site interativo que oferece aos fãs da Marvel uma
 
 ## Orientador
 
-* fábio Leandro Rodrigues Cordeiro
+* Fábio Leandro Rodrigues Cordeiro
 * Franciele Parreiras
 * Shirley Luana Ramos de Assis
 
