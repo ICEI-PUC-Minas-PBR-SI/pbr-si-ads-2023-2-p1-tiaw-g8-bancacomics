@@ -1,7 +1,7 @@
 # Introdução
 
   Tendo em vista que a Marvel é uma das maiores empresas do mundo e faz um grande sucesso praticamente em todos os públicos do mundo geek por meio de animações, filmes, quadrinhos e games.  
-  O presente trabalho tem como objetivo a criação de uma plataforma cujo foco é ajudar tanto as pessoas que curtem quadrinhos a interagir e explorar os diversos títulos e universos presentes na história da Marvel, quanto as que pretendem pela primeira vez se aprofundar nesse universo dos comics.   
+  O presente trabalho tem como objetivo a criação de uma plataforma cujo foco é ajudar tanto as pessoas que curtem quadrinhos a interagir e explorar os diversos títulos e universos presentes na história da Marvel, quanto as que pretendem pela primeira vez se aprofundar nesse universo dos comics. Utilizaremos ferramentas para desenvolvimento web para a criação do site, contaremos com uso de bootstrap, css, html javascript que nos auxiliaram no desenvolvimento da nossa aplicação web, e como ferramenta principal teremos a API fornecida pela propria Marvel Comics, nossa IDE principal sera o Visual Studio Code.  
 
 ## Problema
 
