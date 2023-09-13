@@ -61,10 +61,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RF-002| O projeto deve ter uma Usabilidade e Acessibilidade boa   | MÉDIA | |
-|RF-003| O projeto deve ser apenas Web   | ALTA | |
-|RF-004| O projeto deve consumir a API da Marvel   | ALTA | 
-|RF-005| O projeto deve seguir as leis de Direitos autorais  | ALTA | |
+|RNF-002| O projeto deve ter uma Usabilidade e Acessibilidade boa   | MÉDIA | |
+|RNF-003| O projeto deve ser apenas Web   | ALTA | |
+|RNF-004| O projeto deve consumir a API da Marvel   | ALTA | 
+|RNF-005| O projeto deve seguir as leis de Direitos autorais  | ALTA | |
 
 ## Restrições
 
