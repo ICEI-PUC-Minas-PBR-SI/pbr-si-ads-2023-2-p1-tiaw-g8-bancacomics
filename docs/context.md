@@ -1,54 +1,35 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
-
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+  Tendo em vista que a Marvel é uma das maiores empresas do mundo e faz um grande sucesso praticamente em todos os públicos do mundo geek por meio de animações, filmes, quadrinhos e games.  
+  O presente trabalho tem como objetivo a criação de uma plataforma cujo foco é ajudar tanto as pessoas que curtem quadrinhos a interagir e explorar os diversos títulos e universos presentes na história da Marvel, quanto as que pretendem pela primeira vez se aprofundar nesse universo dos comics.   
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+ Dada a vastidão do universo de quadrinhos de heróis, com suas múltiplas editoras, linha do tempo alternativos e a grande infinidade de personagens, pode ser um dificuldade esmagadora para os fãs que estão entrando nesta mídia e também para fãs experientes que querem explorar mais do que eles experienciaram. A imensidão do universo de quadrinhos de heróis pode ser intimidante para novos fãs que desejam entrar nesse mundo, e com tantas editoras que lançam diferentes universos separados, pode se tornar um caminho confuso para aqueles que têm a vontade de conhecer a história dos super-heróis.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+ Muitas vezes, os fãs têm dificuldade em rastrear todas as informações relevantes sobre seus heróis favoritos: suas origens, poderes, arcos de histórias principais e conexões com outros personagens e histórias paralelas. A falta de uma fonte centralizada e de fácil acesso para essas informações pode ser frustrante e desanimador para quem deseja explorar mais a fundo no universo dos quadrinhos.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+As histórias em quadrinhos são muito importantes em nosso meio, elas nos incentivam, trabalham nossa imaginação e até menos nos identificamos com algumas de suas histórias, e a Marvel não poderia ficar de fora. A Banca Comics tem como objetivo apresentar e recomendar histórias em quadrinhos dos seus personagens preferidos da Marvel, sendo várias histórias e sagas uma diferente das outras, vários mundos, personagens, heróis, vilões e até anti- heróis de diferentes histórias para serem lidos. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+A plataforma irá apresentar seus heróis preferidos de diversas HQs que podem ser avaliadas, criar sua própria lista e até mesmo classificar as HQs como "lidas" ou "ler depois" para HQs que os usuários tenham interesse de ler depois. Sejam bem vindos ao universo Marvel!
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Facilita a Entrada de Novos Fãs - O número e complexidade do universo dos quadrinhos da Marvel pode ser intimidador para os novos fãs. Um aplicativo pode ajudar a organizar as informações básicas e informações sobre os personagens.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Exploração Aprofundada - Para os fãs mais experientes, o aplicativo pode ajudar com informações detalhadas, organização dos quadrinhos e até mesmo discussões com outros fãs. Isso permite que os entusiastas explorem ainda mais o universo dos quadrinhos
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Acompanhamento de Leitura - O aplicativo pode permitir que os leitores acompanhem suas leituras, façam listas de desejos e marquem histórias que já leram. Isso ajuda a organizar a experiência de leitura.
+
+Conexão com Comunidade - Além de compartilhar informações, o aplicativo pode criar uma comunidade onde os fãs podem discutir, compartilhar teorias, arte e experiências. Isso cria um espaço para interações sociais entre os fãs.
+
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Como uma página que visa atender o nicho das histórias em quadrinhos da Marvel, o público-alvo estaria composto, em sua maioria, por fãs da mesma. Entretanto, a página também pode ser um ponto de partida aos sujeitos que conheceram os produtos da Marvel através de filmes, séries, entre outros, para que possam conhecer mais a fundo seus heróis favoritos e suas origens, e também aproveitar de outras adaptações dos personagens.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Estando ciente que as obras da Marvel são consumidas por indivíduos de várias idades, a página Banca Comics também tem como público alvo várias faixas etárias diferentes, de adolescentes e jovens, a pessoas mais velhas. Também há uma parcela de pessoas que usariam das funções do site para organizar as suas leituras e filmes ou séries que querem assistir.
