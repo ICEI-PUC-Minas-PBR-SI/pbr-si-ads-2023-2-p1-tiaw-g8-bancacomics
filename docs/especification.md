@@ -52,8 +52,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
+|RF-001| Permitir que o usuário crie foruns para discussão | ALTA |  |
+|RF-002| Emitir um relatório de hqs com mais favoritos   | MÉDIA | |
+|RF-003| Pemitir que o usuario crie uma conta   | ALTA | |
+|RF-004| Permitir que o usuario crie uma estante com hq's proprias   | MÉDIA | |
+|RF-005| Emitir um relatório de hqs com mais favoritos   | MÉDIA | |
+|RF-006| Possibilitar a busca por quadrinhos por personagem   | MÉDIA | |
+|RF-007| Permitir que os usuários exportem suas bibliotecas de quadrinhos  | BAIXA | |
+|RF-008| Oferecer a opção de criar e gerenciar listas de leitura  | MÉDIA | |
+|RF-009| Permitir que os usuários relatem conteúdo inadequado  | ALTA | |
+|RF-0010| Possibilitar que os usuários compartilhem suas bibliotecas de quadrinhos nas redes sociais  | BAIXA | |
+
+
+
+
+
 
 
 ### Requisitos não Funcionais
@@ -65,6 +78,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| O projeto deve ser apenas Web   | ALTA | |
 |RNF-004| O projeto deve consumir a API da Marvel   | ALTA | 
 |RNF-005| O projeto deve seguir as leis de Direitos autorais  | ALTA | |
+| RNF-06| Desempenho e Escalabilidade: O sistema deve ser altamente responsivo e capaz de escalonar para lidar com um grande número de usuários simultâneos. | ALTA       | 
+| RNF-07| Tempo de Resposta Mínimo: O sistema deve garantir um tempo de resposta médio inferior a 2 segundos para a maioria das interações do usuário, garantindo uma experiência ágil. | ALTA | |
+| RNF-08| Manutenibilidade: O código-fonte do software deve ser bem documentado e seguir boas práticas de programação para facilitar a manutenção contínua e futuras atualizações. | ALTA | |
 
 ## Restrições
 
