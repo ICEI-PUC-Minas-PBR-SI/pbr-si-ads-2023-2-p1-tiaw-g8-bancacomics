@@ -14,7 +14,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 <h3>Fluxo de adição de Hq`s a coleção do usuário </h3>
 
 <div>
-  <img src = "img/userflow_favoritos.jpg"
+  <img src = "img/userflow_favoritos.jpg">
 </div>
  O Fluxo de favoritos funciona para a visualização de todas as etapas desde a pesquisa e seleção de uma hq escolhida até a integração perfeita na coleção.
 
