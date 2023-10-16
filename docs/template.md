@@ -76,10 +76,6 @@ O vermelho é uma cor vibrante e cheia de energia. Em um site de histórias em q
 
 As fontes desempenham um papel muito importante em um design de um site devido a legibilidade e estética o que garante uma melhor experiência para o usuário facilitando a leitura e compreensão do conteúdo. A fonte Roboto está disponível gratuitamente para nos desenvolvedores e é utilizada em vários contextos como aplicativos móveis e até sites devido a sua adaptabilidade e visibilidade em dispositivos móveis.
 
-
-## Iconografia
-
-
 ## Iconografia
 
 A logo da BancaComics foi inspirada na empresa que criou as histórias em quadrinhos oferecidas em nosso site. Ela apresenta um design simplificado, incorporando as cores da icônica logo da Marvel, destacando o vermelho e equilibrando-o com o branco para criar um visual chamativo. A Fonte Bangers e a que mais chega perto da tipográfia das fontes usadas em quadrinhos de antigamente. E uma fonte usada em destaques em  textos é títulos causando uma impressão mais impactante principalmente em quadrinhos com cenas de ação.
