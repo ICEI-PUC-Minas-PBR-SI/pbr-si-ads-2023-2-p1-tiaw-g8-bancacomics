@@ -80,9 +80,13 @@ As fontes desempenham um papel muito importante em um design de um site devido a
 ## Iconografia
 
 
-A logo da BancaComics foi inspirada na empresa que criou as histórias em quadrinhos oferecidas em nosso site. Ela apresenta um design simplificado, incorporando as cores da icônica logo da Marvel, destacando o vermelho e equilibrando-o com o branco para criar um visual chamativo.
+## Iconografia
 
-Os ícones usados referem-se ao tipo de mídia que aquela imagem se refere (HQ, filme, jogo...)
+A logo da BancaComics foi inspirada na empresa que criou as histórias em quadrinhos oferecidas em nosso site. Ela apresenta um design simplificado, incorporando as cores da icônica logo da Marvel, destacando o vermelho e equilibrando-o com o branco para criar um visual chamativo. A Fonte Bangers e a que mais chega perto da tipográfia das fontes usadas em quadrinhos de antigamente. E uma fonte usada em destaques em  textos é títulos causando uma impressão mais impactante principalmente em quadrinhos com cenas de ação.
+
+![BancaComics Logo](img/BancaComics_Logo.png)
+
+Os ícones usados referem-se ao tipo de mídia que aquela imagem se refere (HQ, filme, jogo...).
 
 
 > **Links Úteis**:
