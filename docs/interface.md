@@ -1,17 +1,9 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+<a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## User Flow
-
-![Exemplo de UserFlow](img/userflow.jpg)
-
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
- criacao_wireframe_forum
 
 <h3>Fluxo de Comentários no Fórum sobre os Heróis</h3>
 
@@ -26,22 +18,16 @@ O fluxo de comentários apresenta uma ideia de como o tráfego ocorrerá, tanto 
 <div>
   <img src = "img/userflow_favoritos.jpg"
 </div>
+ 
  O Fluxo de favoritos funciona para a visualização de todas as etapas desde a pesquisa e seleção de uma hq escolhida até a integração perfeita na coleção. 
  
 =======
-<h3>Fluxo de adição de Hq`s a coleção do usuário </h3>
+<h3>Fluxo de pesquisa de um heroi especifico</h3>
 
 <div>
-  <img src = "img/userflow_favoritos.jpg">
+  <img src = "img/userflow_heroi.jpg">
 </div>
- O Fluxo de favoritos funciona para a visualização de todas as etapas desde a pesquisa e seleção de uma hq escolhida até a integração perfeita na coleção.
-
- docs
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+ O Fluxo de pesquisa para um heroi mostra o caminho que o usario fará caso queira achar um heroi de sua preferencia.
 
 ## Wireframes
 
@@ -49,18 +35,14 @@ O fluxo de comentários apresenta uma ideia de como o tráfego ocorrerá, tanto 
 <div>
   <img src="img/wireframe_forum.jpg"/>
 </div>.
-### Exemplo
 
 A tela Inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade.
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+<h3>1- Exemplo de tela para os detalhar personagens.</h3>
+<div>
+  <img src="img/wireframe_personagem.png"/>
+</div>.
 
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+A tela apresenta  a navigation bar padrão do site, ao topo, apresenta informações do heroi que foi buscado pelo usuario atraves de imagens pela galeria de fotos. A área central apresenta um descrição sobre o heroi e suas participações em hq's e filmes.
+
+
