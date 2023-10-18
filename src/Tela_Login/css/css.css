@@ -56,3 +56,7 @@ body {
     overflow: hidden;
 }
 
+.card {
+    border-radius: 30px !important; 
+    overflow: hidden 
+  }
