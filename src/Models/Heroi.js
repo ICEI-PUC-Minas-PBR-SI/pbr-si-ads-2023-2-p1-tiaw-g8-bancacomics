@@ -13,24 +13,6 @@ class Heroi {
         this.events = events || {};
         this.series = series || {};
     }
-
-    Teste() {
-        const heroiInterface = new HeroiInterface();
-        heroiInterface.getAllHeros()
-            .then((heroes) => {
-                console.log(heroes);
-            })
-            .catch((error) => {
-                console.error('Erro ao obter heróis:', error);
-            });
-    }
 }
-
-
-document.getElementById("buscarHerois").addEventListener("click", function () {
-    const heroi = new Heroi();
-    heroi.Teste();
-    
-});
 
 
