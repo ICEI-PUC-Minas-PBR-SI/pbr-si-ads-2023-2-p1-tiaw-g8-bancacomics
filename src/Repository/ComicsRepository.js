@@ -6,7 +6,7 @@ class ComicsRepository {
     getComicsById(id) {
         const publicKey = 'c21a8082ad09f56a486b54525e571e4b';
         const privateKey = 'e83ebfb95b8eba16ea4755b8c17b0a7fa8772db5';
-        const apiUrl = `https://gateway.marvel.com/v1/public/comics/${id}`;
+        const apiUrl = `https://gateway.marvel.com/v1/public/characters/${id}/comics`;
         const ts = new Date().getTime();
         const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
         const url = `${apiUrl}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
@@ -17,8 +17,7 @@ class ComicsRepository {
             }
             return response.json();
         }).then((comics) =>{
-            console.log(comics);
-            return comics;
+            return comics.data.results;
         })
     }
 

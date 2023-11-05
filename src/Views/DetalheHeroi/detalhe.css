@@ -78,13 +78,6 @@ body {
     text-align: center;
 }
 
-#content-grid img{
-    object-fit: cover;
-    border: 6px solid;
-    border-color: #fff;
-    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
-}
-
 #content-grid h1{
     text-align: center;
     font-family: 'Bangers';
@@ -112,4 +105,19 @@ footer{
     border: 8px solid;
     border-color: #fff;
     box-shadow: 14px 14px rgb(0, 0, 0, 0.500);
+}
+
+.sub{
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-size: 3vh;
+    text-align: center;
+    
+}
+
+.imagem{
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 54px;
+    color: white;
 }

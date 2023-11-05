@@ -32,13 +32,6 @@ body {
     filter: drop-shadow(12px 12px rgb(0, 0, 0, 0.500));
 }
 
-#content-hero img{
-    object-fit: cover;
-    border: 5px solid;
-    border-color: #fff;
-    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
-}
-
 #content-gallery img{
     object-fit: cover;
     border: 5px solid;
@@ -112,4 +105,18 @@ footer{
     border: 8px solid;
     border-color: #fff;
     box-shadow: 14px 14px rgb(0, 0, 0, 0.500);
+}
+
+.img{
+    object-fit: cover;
+    border: 6px solid;
+    border-color: #fff;
+    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
+}
+
+.nameHero{
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 54px;
+    color: white;
 }
