@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2e0000;
+    color: white;
+}
+
+.card-header {
+    background-color: #6d0101;
+}
+
+.card-body {
+    background-color: #6d0101;
+}
+
+.form-control {
+    background-color: #b50000;
+}
+
+.white-link {
+    color: #ffffff;
+}
+
+.white-link:hover {
+    color: #a1a1a1;
+}
+
+.custom-button {
+    background-color: #b50000;
+    color: #ffffff;
+}
+
+.red-input {
+    background-color: #b50000 !important;
+    color: #ffffff !important;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-card {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px !important;
+    border: none;
+    max-height: 45vh;
+}
+
+.card {
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 12px;
+    width: 100%;
+    height: 100%;
+}

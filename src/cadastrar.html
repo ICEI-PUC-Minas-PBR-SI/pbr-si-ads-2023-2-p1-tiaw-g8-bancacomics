@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Banca Comics - Cadastrar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css.css">
+
+
+ 
+  <style>
+    .card-login {
+      padding: 30px 0 0 0;
+      width: 275px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body class="custom-background">
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row" style="height: 500px; width: 500px;">
+      <div class="card-login" style="height: 100%; width: 100%;">
+        <div class="card border-0 custom-card">
+
+          <div class="card-body">
+            <form method="post" id="registrationForm">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="nome">Nome Usuario</label>
+                    <input name="nome" type="text" class="form-control red-input" id="nome" placeholder="">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" class="form-control red-input" id="email" placeholder="">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input id="senha" name="senha" type="password" class="form-control red-input" id="senha" placeholder="">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <button class="btn custom-button text-center" type="submit">Criar</button>
+                </div>
+              </div>
+            </form>
+            <div id="successMessage" style="display: none; color: green;">Cadastro realizado com sucesso!</div>
+            <div id="errorMessage" style="display: none; color: red;">Usuário ou email já cadastrados!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+const form = document.getElementById('registrationForm');
+const successMessage = document.getElementById('successMessage');
+const errorMessage = document.getElementById('errorMessage');
+
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+
+
+  const storedData = localStorage.getItem('users');
+  const users = storedData ? JSON.parse(storedData) : [];
+
+  if (users.some(user => user.nome === nome || user.email === email)) {
+   
+    errorMessage.style.display = 'block';
+    successMessage.style.display = 'none';
+  } else {
+
+    const senha = document.getElementById('senha').value;
+
+
+    const user = {
+      nome,
+      email,
+      senha
+    };
+
+
+    users.push(user);
+    localStorage.setItem('users', JSON.stringify(users));
+
+    successMessage.style.display = 'block';
+    errorMessage.style.display = 'none';
+
+    setTimeout(function () {
+      window.location.href = 'login.html';
+    }, 2000);
+  }
+});
+});
+</script>
+</html>
