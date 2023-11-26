@@ -113,7 +113,7 @@ class HeroiController {
                         )
                         html += `<div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
                                 <img class="imagem" width="250" height="180" src="${HQ.thumbnail.path}.${HQ.thumbnail.extension}" alt="1">
-                                <p class="mt-4 sub">${HQ.title}</p></div>`;
+                                <p class="mt-4 sub" onclick="DetalheComic(${HQ.resourceURI})" style="cursor: pointer;">${HQ.title}</p></div>`;
                         console.log(HQ)
                     }
                     cardHq.innerHTML = html;
@@ -123,6 +123,15 @@ class HeroiController {
         });
     }
 
+}
+
+function DetalheComic(api){
+    try{
+        console.log(api);
+        window.location.href = `../DetalheHeroi/Detalhes.html?comicsURL=${api}`;
+    }catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
 }
 
 function DetalhesPag(heroiID) {
