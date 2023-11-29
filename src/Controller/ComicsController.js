@@ -148,6 +148,8 @@ class ComcisController {
                             <h1 class="mt-4" onclick="ALLHQPag()">HQs</h1>
                         </div>`
     }
+
+
 }
 
 function ALLHQPag() {
@@ -183,3 +185,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const hq = new ComcisController();
     hq.DetailHqbyURL();
 });
+
+
+function searchComicsDynamic() {
+    const apiUrl = 'https://gateway.marvel.com/v1/public/comics'
+    const publicKey = 'c21a8082ad09f56a486b54525e571e4b';
+    const privateKey = 'e83ebfb95b8eba16ea4755b8c17b0a7fa8772db5';
+    const ts = new Date().getTime();
+    const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
+    const url = `${apiUrl}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+    const limit = 10;
+    const searchValue = document.getElementById('searchInputDynamic').value.trim();
+    if (searchValue === '') {
+      alert('Digite um título para buscar!');
+      return;
+    }
+  
+    const searchURL = `${url}&titleStartsWith=${searchValue}&limit=${limit}`;
+    console.log(searchURL);
+    fetch(searchURL)
+      .then((response) => response.json())
+      .then((data) => {
+        const comics = data.data.results;
+        console.log(comics);
+        showComics(comics); // Exibe os quadrinhos encontrados
+      })
+      .catch((error) => console.error(error));
+  }
+  
+
+
+
+
+

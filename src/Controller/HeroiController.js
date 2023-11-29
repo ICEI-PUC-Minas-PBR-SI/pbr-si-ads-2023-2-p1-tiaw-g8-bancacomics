@@ -151,3 +151,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const heroi = new HeroiController();
     heroi.DetalharHeroiById();
 });
+
+
+
+
+
+
+function searchHeroDynamic() {
+    const baseURL =  'https://gateway.marvel.com/v1/public/comics'
+    const publicKey = 'c21a8082ad09f56a486b54525e571e4b';
+    const searchValue = document.getElementById('searchInputDynamic').value.trim();
+    if (searchValue === '') {
+        alert('Digite um título para buscar!');
+        return;
+    }
+    
+    const searchURL = `${baseURL}?apikey=${publicKey}&titleStartsWith=${searchValue}&limit=${limit}`;
+    
+    fetch(searchURL)
+        .then(response => response.json())
+        .then(data => {
+            const comics = data.data.results;
+            showComics(comics); // Exibe os quadrinhos encontrados
+        })
+        .catch(error => console.error(error));
+}
