@@ -1,0 +1,123 @@
+body {
+    background-color: #6D0101;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.color-font{
+    color: rgb(255, 255, 255);
+}
+
+#title-marvel{
+    background-color: white;
+    border: solid 5px;
+    border-color: #000;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.500);
+}
+
+#title-marvel-text{
+    text-align: center;
+    font-family: 'Bangers';
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.250);
+    color: red;
+}
+
+#info-char{
+    background-color: #FFEE58;
+    border: solid #000 5px;
+    box-shadow: rgba(0, 0, 0, 0.500) 10px 10px;
+}
+
+#hero{
+    filter: drop-shadow(12px 12px rgb(0, 0, 0, 0.500));
+}
+
+#content-hero img{
+    object-fit: cover;
+    border: 5px solid;
+    border-color: #fff;
+    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
+}
+
+#content-gallery img{
+    object-fit: cover;
+    border: 5px solid;
+    border-color: #fff;
+    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
+}
+
+#pfp-user{
+    border-radius: 50%;
+}
+
+#comment{
+    background-color: #FFEE58;
+    border: solid #000 5px;
+    box-shadow: rgba(0, 0, 0, 0.500) 10px 10px;
+}
+
+#bancacomics{
+    background-color: white;
+    border: solid 5px;
+    border-color: #000;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.500);
+}
+
+#bancacomics-text{
+    text-align: center;
+    font-family: 'Bangers';
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.250);
+    color: red;
+    font-size: 12vh;
+}
+
+#subtitle{
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-size: 6vh;
+    text-align: center;
+}
+
+#content-grid h1{
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 54px;
+    color: white;
+}
+
+footer{
+    background-color: #292929;
+}
+
+#creditos{
+    background-color: #212121;
+}
+
+#creditos ul{
+    color: white;
+}
+
+#carrosel img{
+    object-fit: cover;
+}
+
+#carrosel{
+    border: 8px solid;
+    border-color: #fff;
+    box-shadow: 14px 14px rgb(0, 0, 0, 0.500);
+}
+
+.sub{
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-size: 3vh;
+    text-align: center;
+    
+}
+
+.imagem{
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 54px;
+    color: white;
+}

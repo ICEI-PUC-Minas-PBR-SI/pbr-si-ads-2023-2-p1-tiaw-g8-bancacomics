@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem-Aranha (Peter Parker) | BancaComics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="detalhe.css"> <!-- Seu arquivo CSS personalizado -->
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <script src="../../Controller/authController.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="imagens/BancaComics.png" width="150" height="35"
+                    class="d-inline-block align-top" alt="BancaComics"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Herois
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Filmes</a></li>
+                            <li><a class="dropdown-item" href="#">HQ'S</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Autores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+<form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="searchInputDynamic">
+    <button class="btn btn-outline-success" type="button" onclick="searchComicsDynamic()">Buscar</button>
+</form>
+      
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-75 p-4" id="title-marvelHQ">
+            <h1 id="title-marvel-text"></h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 mb-5" id="foto-heroi">
+                <img src="https://static.wikia.nocookie.net/ficcion-sin-limites/images/6/6b/Spidey.png/revision/latest/scale-to-width-down/375?cb=20210226124716&path-prefix=es"
+                    class="img-fluid" alt="Heroi" id="hero">
+            </div>
+            <div class="col-md-6" id="info-char">
+                <div class="p-3" >
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-50 p-4" id="title-marvel">
+            <h1 id="title-marvel-text">CONTEÚDO</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="content-hero">
+            <div class="col-lg-3 col-md-6 col-12 my-4 d-flex justify-content-center">
+                <img width="200" height="300"
+                    src="https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/60eca3ac155247e21850c7d075d01ebf0f3f5dbf19ccd2a1.jpg"
+                    alt="1">
+            </div>
+            <div class="col-lg-3 col-md-6 my-4 d-flex justify-content-center">
+                <img width="200" height="300"
+                    src="https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg"
+                    alt="1">
+            </div>
+            <div class="col-lg-3 col-md-6 my-4 d-flex justify-content-center">
+                <img width="200" height="300"
+                    src="https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg"
+                    alt="3">
+            </div>
+            <div class="col-lg-3 col-md-6 my-4 d-flex justify-content-center">
+                <img width="200" height="300"
+                    src="https://pics.filmaffinity.com/Spider_Man_Lejos_de_casa-176834859-large.jpg" alt="4">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-50 p-4" id="title-marvel">
+            <h1 id="title-marvel-text">HEROIS PARTICIPANTES</h1>
+        </div>
+    </div>
+
+    <div class="container my-5 w-75">
+        <div class="row" id="content-gallery">
+           
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-50 p-4" id="title-marvel">
+            <h1 id="title-marvel-text">VEJA TAMBÉM</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/fotos-premium/antecedentes-do-pequeno-homem-aranha-em-acao-gerado-por-ia_551405-2801.jpg"
+                        class="card-img-top" alt="Heroi 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Homem-Aranha</h5>
+                        <p class="card-text">O Homem-Aranha é um dos super-heróis mais icônicos da Marvel, conhecido por
+                            suas habilidades aracnídeas e senso de responsabilidade.</p>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/fotos-premium/super-hero-animal-robot-anime-cartoon-limited-edition-style_947926-5658.jpg"
+                        class="card-img-top" alt="Heroi 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantera Negra</h5>
+                        <p class="card-text">O Pantera Negra, também conhecido como T'Challa, é o rei de Wakanda e um
+                            dos mais respeitados heróis da Marvel.</p>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/fotos-premium/uma-maravilha-do-homem-de-ferro-foto-ai-gerada_980993-2544.jpg"
+                        class="card-img-top" alt="Heroi 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Homem de Ferro</h5>
+                        <p class="card-text">O Homem de Ferro, alter ego de Tony Stark, é um gênio da tecnologia e um
+                            dos Vingadores mais importantes.</p>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/fotos-premium/steve-rogers-capitao-america-marvel-personagens-super-herois-marvel-studio-agua-cor-ilustracao-vetor-papel-de-parede-dinamico-dinamico-movendo-respingo-fundo-preto_130181-2805.jpg"
+                        class="card-img-top" alt="Heroi 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Capitão América</h5>
+                        <p class="card-text">O Capitão América, Steve Rogers, é um símbolo de coragem e justiça,
+                            liderando os Vingadores em suas batalhas.</p>
+                        <a id="buscarHerois" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-2">
+        <div class="row mb-5">
+            <div class="col-lg-2 col-12 mb-4">
+                <img src="https://i.stack.imgur.com/34AD2.jpg" width="110" height="110" alt="Username1" id="pfp-user">
+            </div>
+            <div class="col-lg-10 col-12 mb-5">
+                <div class="form-group">
+                    <textarea class="form-control" placeholder=" Escreva um comentário..." rows="8"
+                        style="resize:none"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 mb-4">
+                <img src="https://i.pinimg.com/1200x/0c/e9/12/0ce9126dc84208b92eb761c9f7a02c6b.jpg" width="110"
+                    height="110" alt="Username2" id="pfp-user">
+            </div>
+            <div class="col-lg-10 col-12 p-4" id="comment">
+                <div class="row mb-4">
+                    <div class="col">
+                        <b>DareDevilFanReal1999</b>
+                    </div>
+                    <div class="col" style="text-align: end;">
+                        <b>17:46 13/10/2023</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Gostava mais quando a Marvel não fazia filme
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-8">
+                    <img class="mt-4" src="imagens/BancaComics.png" alt="Banca Comics" width="250">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" id="creditos">
+                    <li>
+                        <ul>Marcos Vinicius Gomes Santana</ul>
+                        <ul>Andoni Rodríguez Alves</ul>
+                        <ul>Guilherme Augusto dos Santos</ul>
+                        <ul>Rodrigo Sergio Alves da Silva</ul>
+                        <ul>Pedro Cesar de Barros</ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../Repository/HeroiRepository.js"></script>
+    <script src="../../Repository/ComicsRepository.js"></script>
+    <script src="../../Controller/HeroiController.js"></script>
+    <script src="../../Controller/ComicsController.js"></script>
+    <script src="../../Models/Heroi.js"></script>
+    <script src="../../Models/Comic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script
+      src="../../../node_modules/blueimp-md5/js/md5.js"></script>
+</body>
+
+</html>
