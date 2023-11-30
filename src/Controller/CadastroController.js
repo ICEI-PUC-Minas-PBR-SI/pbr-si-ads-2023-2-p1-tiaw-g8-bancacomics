@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (userManager.isUnique(newUser)) {
             userManager.addUser(newUser);
             localStorage.setItem('users', JSON.stringify(userManager.users));
+
+            localStorage.setItem('userData', JSON.stringify({
+                nome: newUser.nome,
+                email: newUser.email,
+                senha: newUser.senha
+            }));
+
             alert('Cadastro realizado com sucesso!');
             window.location.href = '../Login/login.html';
         } else {

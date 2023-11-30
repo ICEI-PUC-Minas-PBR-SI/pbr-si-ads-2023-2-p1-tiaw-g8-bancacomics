@@ -2,23 +2,20 @@
 <html lang="en">
     <head>
         <meta charset='UTF-8'>
-        <title>BancaComics | Fórum </title>
+        <title>BancaComics | Perfil </title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="Forum.css">
+        <link rel="stylesheet" href="Profile.css">
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
-        <script src="../../Repository/ComicsRepository.js"></script>
-        <scrpt src="../../Controller/ComicsController.js"></scrpt>
-        <script src="../../Models/Comic.js"> </script>
         <script src="../../Controller/authController.js"></script>
-        <script src="../../Controller/ForumController.js"></script>
         <script src="../../Controller/ProfileController.js"></script>
+        <script src="../../Controller/EditProfileController.js"></script>
         <script src="../../Controller/SearchImg.js"></script>
     </head>
 <body>
@@ -62,7 +59,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://i.stack.imgur.com/34AD2.jpg" alt="FotoDePerfil" width="30" height="30" id="pfp-user" style="display: block; margin-right: 90px;">
+                        <img src="https://i.stack.imgur.com/34AD2.jpg" alt="FotoDePerfil" width="30" height="30" id="pfp-user1" style="display: block; margin-right: 90px;">
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" id="perfilLink">Perfil</a></li>
@@ -75,83 +72,44 @@
             </div>
         </div>
     </nav>
-
     <div class="d-flex justify-content-center my-5">
         <div class="w-25 p-4" id="Forum">
-            <h1 id="ForumText">FÓRUM</h1>
+            <h1 id="ForumText">Perfil</h1>
         </div>
     </div>
 
     <div class="d-flex justify-content-center my-5">
-        <h1 id="subtitle">Divirta-se fazendo postagens e recomendações</h1>
+        <h1 id="subtitle">Edite seu perfil aqui</h1>
     </div>
 
     <div class="container mt-4">
         <div class="row">
-            <div class="col-md-12 mb-5">
-                <div class="card text-white bg-dark border-light border-5">
+            <div class="col-md-12 mb-5" style="height: 300px;">
+                <div class="card text-white bg-dark border-light border-5" style="height: 300px;">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img src="https://i.pinimg.com/1200x/0c/e9/12/0ce9126dc84208b92eb761c9f7a02c6b.jpg" width="110" height="110" alt="Username2" id="pfp-user1" class="img-fluid">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Amazing Fantasy Vol 1 (1961)</h5>
-                            <p class="card-text"><strong>Qual o melhor quadrinho de todos?</strong></p>
-                            <p class="card-text">Oi galera, estava em busca do melhor quadrinho de todos e me deparei com esse, achei incrível a jornada do herói, o que vocês acham, esse é o melhor quadrinho de todos?</p>
-                            
-                            <a href="#" class="btn btn-light">Ver Comentários</a>
+                        <input type="file" accept="image/*" id="fileInput" style="display:none;">
+                        <label for="fileInput">
+                            <img src="https://i.pinimg.com/1200x/0c/e9/12/0ce9126dc84208b92eb761c9f7a02c6b.jpg" width="150" height="150" alt="Username2" id="pfp-user" class="img-fluid">
+                        </label>
+                        <div class="card-body">
+                            <label for="usernameInput">Nome de Usuário:</label>
+                            <input type="text" id="usernameInput" name="usernameInput" class="form-control mb-2" style="width: 150px;">
+    
+                            <label for="emailInput">Email:</label>
+                            <input type="email" id="emailInput" class="form-control mb-2">
+    
+                            <label for="passwordInput">Senha:</label>
+                            <input type="password" id="passwordInput" class="form-control mb-2">
+    
+                            <button type="button" class="btn btn-light" onclick="salvarPerfil()">Salvar</button>
                         </div>
-                        <img src="imagens/HQ_Example.jpg" class="card-img-right img-fluid" alt="Quadrinho 1" style="height: auto; max-width: 200px;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
-    <div class="row" id="cardsContainer"></div>
-
-    <div class="container d-flex justify-content-center align-items-center" style="height: 10vh;">
-        <p id="authMessage" class="text-white"></p>
-        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#criarPublicacaoModal" id="publicacaoBtn">
-            Criar uma Publicação
-        </button>
-    </div>
-
-    <div class="modal fade" id="criarPublicacaoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Criar uma Publicação</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="titulo" class="form-label">Titulo</label>
-                            <input type="text" class="form-control" id="titulo">
-                        </div>
-                        <div class="mb-3">
-                            <label for="assunto" class="form-label">Assunto</label>
-                            <input type="text" class="form-control" id="assunto">
-                        </div>
-                        <div class="mb-3">
-                            <label for="comentario" class="form-label">Comentário</label>
-                            <textarea class="form-control" id="comentario" rows="4"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="recomendacao">
-                            <label class="form-check-label" for="recomendacao">Recomendação</label>
-                        </div>
-                       
-                        <div class="mb-3">
-                            <label for="searchInput" class="form-label">Buscar HQs</label>
-                            <input type="text" class="form-control" id="searchInput" list="hqSuggestions" oninput="searchSuggestions()">
-                            <datalist id="hqSuggestions"></datalist>
-                        </div>                  
-                        <button type="submit" class="btn btn-dark" id="publicarBtn">Publicar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="container">
