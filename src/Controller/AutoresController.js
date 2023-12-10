@@ -38,7 +38,7 @@ class AutoresController {
         })
     }
 
-    DetalharAutor(){
+    DetalharAutor() {
         const params = new URLSearchParams(window.location.search);
         const id = params.get('Id');
         const autorReposity = new AutoresReposotiry()
@@ -66,53 +66,63 @@ class AutoresController {
                 const imagemHQ = document.getElementById("foto-heroi");
                 const imgUrl = `${autor.thumbnail.path}.${autor.thumbnail.extension}`;
                 imagemHQ.innerHTML = `<img src="${imgUrl}" class="img-fluid" alt="Herói" id="hero">`;
-                // if (autor.description) {
-                //     const descricao = document.getElementById("info-char")
-                //     descricao.innerHTML = `<div class="p-3" >${HQ.description}</div>`
-                // } else {
-                //     const descricao = document.getElementById("info-char")
-                //     descricao.innerHTML = `<div class="p-3">Descrição não fornecida pela Marvel</div>`
-                // }
-                // let HeroiRepository = new HeroiInterface();
-                // HeroiRepository.getHeroByUrl(`${HQ.characters.collectionURI}`).then((hero) => {
-                //     if (hero.length > 0) {
-                //         console.log(hero)
-                //         const cardHq = document.getElementById("content-gallery");
-                //         cardHq.innerHTML = ''
-                //         let html = '';
-                //         for (let i = 0; i < hero.length; i++) {
-                //             const personagem = new Heroi(
-                //                 hero[i].id,
-                //                 hero[i].name,
-                //                 hero[i].description,
-                //                 hero[i].resourceURI,
-                //                 hero[i].urls,
-                //                 hero[i].thumbnail,
-                //                 hero[i].comics,
-                //                 hero[i].stories,
-                //                 hero[i].events,
-                //                 hero[i].series,
-                //             )
-                //             html += `<div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
-                //                 <img class="imagem" width="250" height="180" src="${personagem.urls.path}.${personagem.urls.extension}" alt="1">
-                //                 <p class="mt-4 sub" onclick="DetalhesHeroiPag(${personagem.id})" style="cursor: pointer;">${personagem.name}</p></div>`;
-                //             console.log(personagem)
-                //         }
-                //         cardHq.innerHTML = html;
-                //     }else{
-                //         const cardHq = document.getElementById("content-gallery");
-                //         cardHq.innerHTML = '<p class="mt-4 sub" style="cursor: pointer;">Sem informações sobre os personagen participantes</p></div>'
-                //     }
-                // });
+
+                let SerieRep = new SerieRepository();
+                SerieRep.getSerieByUrl(`${autor.series.collectionURI}`).then((data) => {
+                    if (data.length > 0) {
+                        console.log(data)
+                        const cardSerie = document.getElementById("content-gallery");
+                        cardSerie.innerHTML = '';
+                        let html = '';
+                        let htmlVeja = '';
+                        for (let i = 0; i < data.length; i++) {
+                            const series = new Serie(
+                                data[i].id,
+                                data[i].title,
+                                data[i].description,
+                                data[i].startYear,
+                                data[i].endYear,
+                                data[i].rating,
+                                data[i].modified,
+                                data[i].thumbnail,
+                                data[i].comics,
+                                data[i].stories,
+                                data[i].events,
+                                data[i].characters,
+                                data[i].creators,
+                            )
+                            html += `<div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
+                                <img class="imagem" width="250" height="180" src="${series.thumbnail.path}.${series.thumbnail.extension}" alt="1">
+                                <p class="mt-4 sub" onclick="DetalheSerie('${series.stories.collectionURI}')" style="cursor: pointer;">${series.title}</p></div>`;
+                            console.log(series)
+                        }
+
+                        cardSerie.innerHTML = html;
+                    } else {
+                        const cardHq = document.getElementById("content-gallery");
+                        cardHq.innerHTML = '<p class="mt-4 sub" style="cursor: pointer;">Sem informações sobre os personagen participantes</p></div>'
+                    }
+                });
             }
         })
     }
+
+
 }
 
-function DetalheAutor(id){
-    try{
+
+function DetalheAutor(id) {
+    try {
         window.location.href = `../AutoresDetalhe/Detalhes.html?Id=${id}`;
-    }catch (error) {
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function DetalheSerie(url) {
+    try {
+        window.location.href = `../DetalheSerie/Detalhes.html?UrlApi=${url}`;
+    } catch (error) {
         console.error('Erro ao carregar dados da API:', error);
     }
 }
@@ -120,6 +130,30 @@ function DetalheAutor(id){
 function ALLAutoresPag() {
     try {
         window.location.href = `../Autores/Autores.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function ALLHQPag() {
+    try {
+        window.location.href = `../HQs/index.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function HomePag() {
+    try {
+        window.location.href = `../Home/index.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function SeriePag() {
+    try {
+        window.location.href = `../Series/index.html`;
     } catch (error) {
         console.error('Erro ao carregar dados da API:', error);
     }

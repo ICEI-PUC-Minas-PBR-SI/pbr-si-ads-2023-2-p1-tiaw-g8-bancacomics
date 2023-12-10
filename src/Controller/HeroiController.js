@@ -142,6 +142,37 @@ function DetalhesPag(heroiID) {
     }
 }
 
+function ALLAutoresPag() {
+    try {
+        window.location.href = `../Autores/Autores.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function ALLHQPag() {
+    try {
+        window.location.href = `../HQs/index.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function HomePag() {
+    try {
+        window.location.href = `../Home/index.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
+
+function SeriePag() {
+    try {
+        window.location.href = `../Series/index.html`;
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+    }
+}
 document.addEventListener("DOMContentLoaded", function () {
     const heroi = new HeroiController();
     heroi.ListarHerois();

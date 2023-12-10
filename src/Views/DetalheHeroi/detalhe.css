@@ -121,3 +121,17 @@ footer{
     font-size: 54px;
     color: white;
 }
+
+.title{
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 54px;
+    color: white;
+}
+
+.imgg{
+    object-fit: cover;
+    border: 6px solid;
+    border-color: #fff;
+    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
+}

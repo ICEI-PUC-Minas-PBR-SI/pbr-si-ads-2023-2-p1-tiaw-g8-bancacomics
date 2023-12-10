@@ -1,7 +1,7 @@
-body {
+#fundo{
     background-color: #6D0101;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
 .color-font{
@@ -78,6 +78,13 @@ body {
     text-align: center;
 }
 
+#content-grid img{
+    object-fit: cover;
+    border: 6px solid;
+    border-color: #fff;
+    box-shadow: 12px 12px rgb(0, 0, 0, 0.500);
+}
+
 #content-grid h1{
     text-align: center;
     font-family: 'Bangers';
@@ -97,34 +104,52 @@ footer{
     color: white;
 }
 
-#carrosel img{
-    object-fit: cover;
+.comics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para garantir que os itens se ajustem na largura da tela */
 }
 
-#carrosel{
-    border: 8px solid;
-    border-color: #fff;
-    box-shadow: 14px 14px rgb(0, 0, 0, 0.500);
+.comic {
+  display: block; /* Garante que cada HQ seja exibida como um bloco */
+  margin: 10px; /* Adiciona margem entre as HQs para melhor espaçamento */
 }
 
-.sub{
-    color: white;
-    font-family: 'Barlow Condensed';
-    font-size: 3vh;
-    text-align: center;
-    
+
+/* O restante do seu CSS existente */
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.imagem{
-    text-align: center;
-    font-family: 'Bangers';
-    font-size: 54px;
-    color: white;
+.pagination a {
+  color: #fff; /* Cor do texto branco */
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 4px;
+  background-color: #ccc; /* Cor de fundo cinza */
 }
+
+.pagination a:hover {
+  background-color: #000; /* Cor de fundo quando passa o mouse */
+  color: #444; /* Cor do texto ao passar o mouse */
+}
+
 
 .title{
     text-align: center;
     font-family: 'Bangers';
+    font-size: 54px;
     color: white;
 }
 

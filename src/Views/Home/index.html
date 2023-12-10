@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 65px;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="imagens/BancaComics.png" width="150" height="35"
+            <a class="navbar-brand" href="../Home/index.html"><img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g8-bancacomics/develop/src/Views/Home/imagens/BancaComics.png" width="150" height="35"
                     class="d-inline-block align-top" alt="BancaComics"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,11 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-
                         <a class="nav-link" href="../Forum/Forum.html">Forum</a>
-
-                        <a class="nav-link" href="#">Forum</a>
-
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -61,6 +57,20 @@
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button id="teste" class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://i.stack.imgur.com/34AD2.jpg" alt="FotoDePerfil" width="30" height="30" id="pfp-user" style="display: block; margin-right: 90px;">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" id="perfilLink">Perfil</a></li>
+                        <li>
+                            <hr class="dropdown-divider" id="some">
+                        </li>
+                        <li><a class="dropdown-item" id="sairBtn">Sair</a></li>
+                    </ul>
+                </li>
             </div>
         </div>
     </nav>
@@ -94,7 +104,7 @@
                 <div>
                     <img src="https://classic.exame.com/wp-content/uploads/2023/07/loki-tom-hiddleston-001.webp?w=1024"
                         width="250" height="180" alt="Séries">
-                    <h1 class="mt-4">Séries</h1>
+                    <h1 class="mt-4" onclick="SeriePag()">Séries</h1>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
@@ -104,20 +114,11 @@
                     <h1 class="mt-4">Jogos</h1>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
-                <div>
-                    <img src="https://img.olhardigital.com.br/wp-content/uploads/2023/07/wolverine.jpg" width="250"
-                        height="180" alt="Personagens">
-                    <h1 class="mt-4">Personagens</h1>
-                </div>
-            </div>
+        
             <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
                 <div>
                     <img src="https://images.thedirect.com/media/article_full/stan-lee-marvel-mcu-avengers.jpg"
                         width="250" height="180" alt="Pessoas">
-
-                    <h1 class="mt-4">Pessoas</h1>
-
                     <h1 class="mt-4" onclick="ALLAutoresPag()">Pessoas</h1>
 
                 </div>
@@ -183,7 +184,7 @@
                 <div>
                     <img src="https://images.thedirect.com/media/article_full/stan-lee-marvel-mcu-avengers.jpg"
                         width="250" height="180" alt="Pessoas">
-                    <h1 class="mt-4">Pessoas</h1>
+                    <h1 class="mt-4"></h1>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
@@ -298,8 +299,7 @@
             </div>
         </div>
     </footer>
-    <script
-        src="../../Repository/HeroiRepository.js"></script>
+    <script src="../../Repository/HeroiRepository.js"></script>
     <script src="../../Controller/HeroiController.js"></script>
 
     <script src="../../Controller/AutoresController.js"></script>
@@ -307,10 +307,9 @@
     <script src="../../Controller/ComicsController.js"></script>
     <script src="../../Models/Heroi.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <script
-        src="../../../node_modules/blueimp-md5/js/md5.js"></script>
-    
-    
+    <script src="../../../node_modules/blueimp-md5/js/md5.js"></script>
+
+
 </body>
 
 </html>
