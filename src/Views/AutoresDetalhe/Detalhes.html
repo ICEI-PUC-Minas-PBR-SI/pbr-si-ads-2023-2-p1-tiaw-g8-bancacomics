@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="detalhe.css"> <!-- Seu arquivo CSS personalizado -->
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 
-    <script src="../../Controller/authController.js"></script>
-
-
-
 
 </head>
 
@@ -50,16 +46,17 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+<form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="searchInputDynamic">
+    <button class="btn btn-outline-success" type="button" onclick="searchComicsDynamic()">Buscar</button>
+</form>
+      
             </div>
         </div>
     </nav>
 
     <div class="d-flex justify-content-center my-5">
-        <div class="w-75 p-4" id="title-marvel">
+        <div class="w-75 p-4" id="title-marvelAutor">
             <h1 id="title-marvel-text"></h1>
         </div>
     </div>
@@ -111,7 +108,7 @@
 
     <div class="d-flex justify-content-center my-5">
         <div class="w-50 p-4" id="title-marvel">
-            <h1 id="title-marvel-text">Aparições do personagem em HQ's</h1>
+            <h1 id="title-marvel-text">HEROIS PARTICIPANTES</h1>
         </div>
     </div>
 
@@ -234,16 +231,12 @@
 
 
 
-    <script
-        src="../../Repository/HeroiRepository.js"></script>
-    <script src="../../Models/Heroi.js"></script>
-    <script src="../../Repository/ComicsRepository.js"></script>
-    <script src="../../Models/Comic.js"></script>
-    <script
-        src="../../Controller/HeroiController.js"></script>
+    <script src="../../Repository/AutoresRepository.js"></script>
+    <script src="../../Controller/AutoresController.js"></script>
+    <script src="../../Models/Autor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script
-        src="../../../node_modules/blueimp-md5/js/md5.js"></script>
+      src="../../../node_modules/blueimp-md5/js/md5.js"></script>
 </body>
 
 </html>

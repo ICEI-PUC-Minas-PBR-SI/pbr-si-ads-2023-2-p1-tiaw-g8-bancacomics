@@ -1,4 +1,7 @@
-* {
+
+
+*{
+
     box-sizing: border-box;
 }
 
@@ -6,6 +9,7 @@ body {
     background-color: #2e0000;
     color: white;
 }
+
 
 .card-header {
     background-color: #6d0101;
@@ -21,6 +25,21 @@ body {
 
 .white-link {
     color: #ffffff;
+=======
+.card-header{
+    background-color: #6d0101;
+}
+
+.card-body{
+    background-color: #6d0101;
+}
+.form-control{
+    background-color: #b50000;
+}
+
+  .white-link {
+    color: #ffffff; 
+
 }
 
 .white-link:hover {
@@ -28,6 +47,7 @@ body {
 }
 
 .custom-button {
+
     background-color: #b50000;
     color: #ffffff;
 }
@@ -62,3 +82,41 @@ body {
     width: 100%;
     height: 100%;
 }
+
+    background-color: #b50000; 
+    color: #FFFFFF;
+}
+
+.red-input {
+    background-color: #b50000 !important; 
+    color: #FFFFFF !important; 
+    border: 1px solid transparent;
+    border-radius: 10px; 
+    padding: 8px 12px; 
+}
+
+.custom-card {
+    border-radius: 10px !important; 
+    border: none;
+    border-radius: 0;
+  }
+  
+
+  .custom-card {
+    border: none;
+    border-radius: 0;
+}
+
+.custom-card .card-header {
+    border: none;
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 15px !important; 
+    overflow: hidden;
+    box-shadow: rgb(0, 0, 0, 0.500) 0px 12px;
+    width: 100%;
+    height: 100%;
+  }
+

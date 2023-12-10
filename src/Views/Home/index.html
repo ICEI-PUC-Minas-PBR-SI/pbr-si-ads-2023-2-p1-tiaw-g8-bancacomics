@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="home.css">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+
     <script src="../../Controller/authController.js"></script>
+
 </head>
 
 <body>
@@ -34,7 +36,11 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+
                         <a class="nav-link" href="../Forum/Forum.html">Forum</a>
+
+                        <a class="nav-link" href="#">Forum</a>
+
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -109,7 +115,11 @@
                 <div>
                     <img src="https://images.thedirect.com/media/article_full/stan-lee-marvel-mcu-avengers.jpg"
                         width="250" height="180" alt="Pessoas">
+
                     <h1 class="mt-4">Pessoas</h1>
+
+                    <h1 class="mt-4" onclick="ALLAutoresPag()">Pessoas</h1>
+
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
@@ -291,6 +301,9 @@
     <script
         src="../../Repository/HeroiRepository.js"></script>
     <script src="../../Controller/HeroiController.js"></script>
+
+    <script src="../../Controller/AutoresController.js"></script>
+
     <script src="../../Controller/ComicsController.js"></script>
     <script src="../../Models/Heroi.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
