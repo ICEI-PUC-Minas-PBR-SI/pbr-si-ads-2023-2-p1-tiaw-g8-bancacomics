@@ -120,3 +120,8 @@ footer{
     font-size: 54px;
     color: white;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
