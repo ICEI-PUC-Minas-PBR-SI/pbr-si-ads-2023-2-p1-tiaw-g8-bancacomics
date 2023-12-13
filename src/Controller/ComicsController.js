@@ -40,8 +40,8 @@ class ComcisController {
                     )
                     comicHtml += `<div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
                     <div>
-                        <img class="img" src="${HQ.thumbnail.path}.${HQ.thumbnail.extension}" width="250" height="180" alt="${HQ.title}">
-                        <h5 class="mt-4 nameHero" onclick="DetalhesHQPag('${HQ.resourceURI}')" style="cursor: pointer;">${HQ.title}</h5>
+                        <img class="imgg" src="${HQ.thumbnail.path}.${HQ.thumbnail.extension}" width="250" height="180" alt="${HQ.title}">
+                        <h5 class="mt-4 title" onclick="DetalhesHQPag('${HQ.resourceURI}')" style="cursor: pointer;">${HQ.title}</h5>
                     </div>
                     </div>`
 
