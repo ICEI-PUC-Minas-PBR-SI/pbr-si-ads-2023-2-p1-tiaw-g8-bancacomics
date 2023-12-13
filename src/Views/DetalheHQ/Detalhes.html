@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem-Aranha (Peter Parker) | BancaComics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="detalhe.css"> <!-- Seu arquivo CSS personalizado -->
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+
+    <script src="../../Controller/authController.js"></script>
+    <script src="../../Controller/ProfileController.js"></script>
+    <script src="../../Controller/SearchImg.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 65px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../Home/index.html"><img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g8-bancacomics/develop/src/Views/Home/imagens/BancaComics.png" width="150" height="35"
+                    class="d-inline-block align-top" alt="BancaComics"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Forum/Forum.html">Forum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Herois
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Filmes</a></li>
+                            <li><a class="dropdown-item" href="../HQs/index.html">HQ'S</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../Autores/Autores.html">Autores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button id="teste" class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://i.stack.imgur.com/34AD2.jpg" alt="FotoDePerfil" width="30" height="30" id="pfp-user" style="display: block; margin-right: 90px;">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" id="perfilLink">Perfil</a></li>
+                        <li>
+                            <hr class="dropdown-divider" id="some">
+                        </li>
+                        <li><a class="dropdown-item" id="sairBtn">Sair</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-75 p-4" id="title-marvelHQ">
+            <h1 id="title-marvel-text"></h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 mb-5" id="foto-heroi">
+                <img src="https://static.wikia.nocookie.net/ficcion-sin-limites/images/6/6b/Spidey.png/revision/latest/scale-to-width-down/375?cb=20210226124716&path-prefix=es"
+                    class="img-fluid" alt="Heroi" id="hero">
+            </div>
+            <div class="col-md-6" id="info-char">
+                <div class="p-3" >
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-50 p-4" id="title-marvel">
+            <h1 id="title-marvel-text">CONTEÚDO</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="content-hero">
+            <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div>
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/60eca3ac155247e21850c7d075d01ebf0f3f5dbf19ccd2a1.jpg"
+                        width="250" height="180" alt="Jogos" class="imgg">
+                    <h1 class="mt-4 title" onclick="ALLHQPag()">HQs</h1>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg"
+                        width="250" height="180" alt="Jogos" class="imgg">
+                    <h1 class="mt-4 title" onclick="HomePag()">Home</h1>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg"
+                        width="250" height="180" alt="Jogos" class="imgg">
+                    <h1 class="mt-4 title" onclick="SeriePag()">Series</h1>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISAiTWdwR61zVPR8t7xVM1t8h6IuYO82jT94BpfyDyyZJsIiInN3B9pPA2TqFcmpKyyQ&usqp=CAU"
+                        width="250" height="180" alt="Jogos" class="imgg">
+                    <h1 class="mt-4 title" onclick="ALLAutoresPag()">Autores</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center my-5">
+        <div class="w-50 p-4" id="title-marvel">
+            <h1 id="title-marvel-text">HEROIS PARTICIPANTES</h1>
+        </div>
+    </div>
+
+    <div class="container my-5 w-75">
+        <div class="row" id="content-gallery">
+           
+        </div>
+    </div>
+
+  
+  
+
+    <div class="container mt-5 mb-2">
+        <div class="row mb-5">
+            <div class="col-lg-2 col-12 mb-4">
+                <img src="https://i.stack.imgur.com/34AD2.jpg" width="110" height="110" alt="Username1" id="pfp-user">
+            </div>
+            <div class="col-lg-10 col-12 mb-5">
+                <div class="form-group">
+                    <textarea class="form-control" placeholder=" Escreva um comentário..." rows="8"
+                        style="resize:none"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 mb-4">
+                <img src="https://i.pinimg.com/1200x/0c/e9/12/0ce9126dc84208b92eb761c9f7a02c6b.jpg" width="110"
+                    height="110" alt="Username2" id="pfp-user">
+            </div>
+            <div class="col-lg-10 col-12 p-4" id="comment">
+                <div class="row mb-4">
+                    <div class="col">
+                        <b>DareDevilFanReal1999</b>
+                    </div>
+                    <div class="col" style="text-align: end;">
+                        <b>17:46 13/10/2023</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Gostava mais quando a Marvel não fazia filme
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-8">
+                    <img class="mt-4" src="imagens/BancaComics.png" alt="Banca Comics" width="250">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" id="creditos">
+                    <li>
+                        <ul>Marcos Vinicius Gomes Santana</ul>
+                        <ul>Andoni Rodríguez Alves</ul>
+                        <ul>Guilherme Augusto dos Santos</ul>
+                        <ul>Rodrigo Sergio Alves da Silva</ul>
+                        <ul>Pedro Cesar de Barros</ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../Repository/HeroiRepository.js"></script>
+    <script src="../../Repository/ComicsRepository.js"></script>
+    <script src="../../Controller/HeroiController.js"></script>
+    <script src="../../Controller/ComicsController.js"></script>
+    <script src="../../Models/Heroi.js"></script>
+    <script src="../../Models/Comic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script
+      src="../../../node_modules/blueimp-md5/js/md5.js"></script>
+</body>
+
+</html>
