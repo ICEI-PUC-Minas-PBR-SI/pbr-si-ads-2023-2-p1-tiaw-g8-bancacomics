@@ -16,7 +16,6 @@ O projeto "BancaComics" é um site interativo que oferece aos fãs da Marvel uma
 * Andoni Rodriguez Alves
 * Guilherme Augusto dos Santos
 * Rodrigo Sergio Alves da Silva
-* Estavão Antunes Lessa Sousa Oliveira
 * Pedro Cesar de Barros
 * Marçal Augusto de Morais
 
