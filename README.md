@@ -17,7 +17,6 @@ O projeto "BancaComics" é um site interativo que oferece aos fãs da Marvel uma
 * Guilherme Augusto dos Santos
 * Rodrigo Sergio Alves da Silva
 * Pedro Cesar de Barros
-* Marçal Augusto de Morais
 
 ## Orientador
 
